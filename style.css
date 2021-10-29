@@ -1,0 +1,163 @@
+
+h2, h1, p {
+    color: white;
+}
+
+footer p {
+    color: #455A64 !important; 
+    font-size: small !important;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.lead {
+    text-align: center !important;
+}
+
+footer a {
+    color: #455A64 !important; ;
+}
+
+footer {
+    /* background-color: #455A64; */
+    /* background-color: #1a252f; */
+    /* background-color: whitesmoke; */
+    /* position: fixed;
+    bottom:0;
+    left:0; */
+    /* height: 120px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* #content-footer {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+#content-footer {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body {
+    background-color: #8f00b5;
+    background-color: white;
+}
+
+.ique_container_app {
+    background-color: #8f00b5;
+    background-color: #0e0e13;
+}
+
+/* .ique_container_app {
+    margin-top: 70px;
+} */
+.logo {
+    background-color: #0e0e13;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.ique_container_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ique-content-app {
+    margin-top: 70px;
+}
+
+.btn-dark, .btn-primary {
+    width: 250px;
+    height: 70px;
+    font-weight: bold !important;
+}
+
+.ique_btn, .ique-btn-alt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-dark, .btn-primary {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px !important;
+}
+
+.btn-buyZeex, .btn-dark, #link-alternative, #btn-submit-alt {
+    cursor: pointer !important;
+}
+
+#link-alternative:hover {
+    color: rgb(42, 169, 184);
+}
+
+.ique_bold {
+    font-weight: bold !important;
+}
+
+#modal1-msg {
+    color: black;
+}
+
+.modal-content-alt, .modal-body-alt, .container-alt, .alt {
+    background-color: #212121 !important;
+    color: #f8f8ff !important; 
+}
+
+.btn-primary {
+    background-color: #8f00b5 !important;
+    border-color: #8f00b5 !important;
+}
+
+.form {
+    background-color: white;
+    border-radius: 15px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 25px;
+}
+
+#msg-sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#t {
+    color: red !important;
+}
+
+#div-input-BNB, #div-input-BNB-card  {
+    display: none;
+}
+
+

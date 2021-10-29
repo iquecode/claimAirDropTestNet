@@ -1,0 +1,365 @@
+/* body {
+    background-image: url("backgoud_img.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+} */
+
+
+.ique-area-action {
+    width: 100px;
+}
+
+.ique-area-action img {
+    width: 50px;
+}
+
+.ique-cards {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* background-color: #0e0e13; */
+    flex-wrap: wrap !important;
+}
+
+.ique-cards {
+    margin-bottom: 30px;
+}
+
+.ique-content {
+    background-color: #0e0e13;
+}
+
+.card {
+    width: 300px !important;
+    margin: 20px;
+}
+
+.ique-content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 100%;
+}
+
+.ique-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ique-cards-wrapper, .container-step {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    /* color: blue; */
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-footer, .card-body {
+    background-color:  #0e0e13;
+}
+/* .card-body {
+    background-color: #0e0e13;
+} */
+
+.btn-light {
+    background-color: #2aa9b8 !important;
+    border-color: #2aa9b8 !important;
+    width: 150px !important;
+    /* height: 50px !important; */
+    font-weight: bold !important;
+    color: white;
+} 
+
+.card-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ique-partner-program {
+    background-color: #8224e3;
+    
+}
+
+.ique-partner-awards{
+    background-color: #0e0e13 !important;
+    color: whitesmoke !important;
+}
+
+.ique-partner-awards h1, .ique-partner-awards p, .ique-partner-awards span {
+    color: whitesmoke !important;
+}
+
+.ique-cards-wrapper {
+
+    
+    background-image: url(https://www.artzeex.com/wp-content/uploads/2019/06/code2-about-bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding-top: 50PX; */
+
+    background-image: url("fundo-escuro.png");
+    /* background-repeat: no-repeat;
+    background-size:contain; 
+    background-position: center; */
+    /* margin-bottom: 70px; */
+    padding-bottom: 70PX;
+}
+
+.ique-step {
+    margin-top: 30px;
+}
+
+
+
+.ique-partner-program, .ique-partner-awards, .ique-whitepaper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ique-partner-program-content, .ique-partner-awards-content, .ique-whitepaper-content {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ique-partner-program-content p, .ique-partner-awards-content p, .ique-whitepaper-content p{
+   text-align: center;
+}
+
+.link-hand {
+    background-color: #2aa9b8;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.link-hand:hover {
+    background-color: whitesmoke;
+    color: #2aa9b8;
+}
+
+.ique-whitepaper {
+    background-color: white;
+    color: black !important;
+    /* background-image: url("fundo-escuro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:inherit;
+    height: 400px; */
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 450px;
+    background-color: #ffffff;
+    background-image: url(https://www.artzeex.com/wp-content/uploads/2019/06/code2-home-last-section-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+
+.ique-whitepaper-content h1{
+    color: black !important;
+}
+
+.pink {
+    background-color: #8f00b5;
+    border-color: #8f00b5;
+}
+
+.ique_container_app_pink {
+    background-color: #8224e3;
+    padding-top: 50px;
+}
+
+.ique-white {
+    color: whitesmoke !important;
+}
+
+/* STEPPER */
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    color: whitesmoke;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+    color: #49a7cc;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #2aa9b8;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #2aa9b8;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+#connect-metamask, #conect-wallet-conect {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #78909C;
+    padding: 7px;
+    cursor: pointer;
+} 
+
+#connect-metamask {
+    margin-bottom: 10px;
+}
+
+#connect-metamask:hover, #conect-wallet-conect:hover {
+    border: solid 2px #2aa9b8;
+}
+
+#stepper-conect {
+    cursor: pointer;
+}
+
+.ique-show-flex {
+    display: flex !important;
+}
+
+.ique-hide {
+    display: none !important;
+}
+
+#content-footer-down {
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column; 
+    align-items:center; 
+    width: 100%;
+}
+
+#div-disclaimer {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+}
+
+#footer-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#disclaimer {
+    font-size:2em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.links-presale {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.links-presale:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:800px) {
+    footer p {
+        text-align: center;
+    }
+
+    /* #content-footer {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+    #content-footer {
+        height: 70%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+} 
