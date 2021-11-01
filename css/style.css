@@ -156,8 +156,13 @@ body {
     color: red !important;
 }
 
-#div-input-BNB, #div-input-BNB-card  {
+/* #div-input-BNB, #div-input-BNB-card  {
+    display: none;
+} */
+
+#div-input-USDT {
     display: none;
 }
+
 
 

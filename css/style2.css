@@ -340,6 +340,11 @@
     text-decoration: none;
 }
 
+.ique-display-block {
+    display: block !important;
+}
+
+
 @media only screen and (max-width:800px) {
     footer p {
         text-align: center;

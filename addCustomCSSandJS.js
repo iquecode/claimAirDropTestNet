@@ -17,9 +17,8 @@ function addjs(js){
     head.appendChild(s);
 }   
 
-addcss('style.css');
-addcss('style2.css');
-addjs('main.js');
-addjs('sendemail.js');
-addjs('storageRefZ.js');
+addcss('./css/style.css');
+addcss('./css/style2.css');
+addjs('./js/main.js');
+addjs('./js/storageRefZ.js');
 addjs('https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.6.6/web3-provider.min.js');
