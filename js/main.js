@@ -255,21 +255,24 @@ function  resultTxHash(hash, type='') {
     hideAllModals();
     clearForm();
     if (type == "airdrop") {
-        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, `We still have ZEEX with a big pre-sale discount. enjoy and buy now`);
+        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, 
+        `<span style="color:#4A148C; font-weight:900">We still have ZEEX with a big pre-sale discount, enjoy and buy now. To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>`);
         user.set("airdropv1", true);
         user.save();
         renderApp();
         return true;
     }
     if (type == "buyWithUSDT") {
-        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, `We still have ZEEX with a big pre-sale discount. enjoy and buy now`);
+        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`,
+        `<span style="color:#4A148C; font-weight:900">To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>`);
         user.set("airdropv1", true);
         user.save();
         renderApp();
         return true;
     }
     if (type == "buyWithBNB") {
-        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, `We still have ZEEX with a big pre-sale discount. enjoy and buy now`);
+        showModal(`AirDrop sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, 
+        `<span style="color:#4A148C; font-weight:900">To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>`);
         user.set("airdropv1", true);
         user.save();
         renderApp();
@@ -285,7 +288,8 @@ function  resultTxHash(hash, type='') {
         } 
         return true;
     }
-    showModal('Transaction sent successfully', `<a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`);
+    showModal(`Transaction sent successfully. <a href="https://bscscan.com/tx/${hash}" target="_black">Transaction Hash: ${hash}</a>`, 
+    `<span style="color:#4A148C; font-weight:900">To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>`);
 }
 
 async function claimAirDrop() {
@@ -296,7 +300,7 @@ async function claimAirDrop() {
         contractAddress: smartContractAddr,  
         functionName: "claimAirDrop",  
         abi: smartContractABI,  
-        msgValue: "0",    //400000000000000    
+        msgValue: "200000000000000",    //400000000000000    
         awaitReceipt: false,
         params: {    
             id: getRefZ()
@@ -384,7 +388,8 @@ function resultBuyWithBNB(j) {
         clearForm();
         //user.set("cod_partner_v1", usercode);
         //user.save();
-        showModal("Success", `Congratulations, Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.` );
+        showModal("Success", `Congratulations, Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.
+        <span style="color:#4A148C; font-weight:900">We still have ZEEX with a big pre-sale discount, enjoy and buy now. To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>` );
     } else {
         showModal("Error", j + "Unexpected error. Reconnect your wallet and try again." )
         logout();
@@ -402,7 +407,8 @@ function resultSwap(j) {
         clearForm();
         //user.set("cod_partner_v1", usercode);
         //user.save();
-        showModal("Success", `Congratulations, Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.` );
+        showModal("Success", `Congratulations, Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.
+        <span style="color:#4A148C; font-weight:900">We still have ZEEX with a big pre-sale discount, enjoy and buy now. To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>` );
     } else {
         showModal("Error", j + "Unexpected error. Reconnect your wallet and try again." )
         logout();
@@ -459,7 +465,8 @@ async function resultAproveUSDT(j,amountUSDT) {
                 clearForm();
                 hideAllModals();
                 //sendEmail(email, name, `${amountUSDT}`);
-                showModal("Success", "Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com." );
+                showModal("Success", `Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.
+                <span style="color:#4A148C; font-weight:900">We still have ZEEX with a big pre-sale discount, enjoy and buy now. To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>` );
             }
 
         }
@@ -535,7 +542,8 @@ async function buyZeex(amountUSDT, BNB=false, AmountZ = 0) {
                             clearForm();
                             hideAllModals();
                             //sendEmail(email, name, `${amountUSDT}`);
-                            showModal("Success", "Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com." );
+                            showModal("Success", `Congratulations, your transaction was successful. If you have any questions, please contact contact@artzeex.com.
+                            <span style="color:#4A148C; font-weight:900">To view your tokens add the ZEEX contract 0xb9c21a1A716Ee781B0Ab282F3AEdDB3382d7aAdc to your wallet.</span>` );
                         }
                     }
 
@@ -671,7 +679,7 @@ function updateBNB(price) {
     const inputBNB = document.querySelector('#InputBNB');
     const priceBNBhelp = document.getElementById("priceBNBHelp");
     priceBNBhelp.innerHTML = `Receive ${(inputBNB.value / priceZEEXinBNB).toFixed(4)} ZEEX! : ) | ref. current quote. - exact amount of ZEEX can be adjusted on confirmation.`;
-    if (inputBNB.value < 0.1) {
+    if (inputBNB.value < 0.001) {
         priceBNBhelp.innerHTML = `1 ZEEX = approx. ${(priceZEEXinBNB).toFixed(4)} BNB at the current quote | 0.33 USD.`;
     } 
     nZeex = (inputBNB.value / priceZEEXinBNB).toFixed(6) * 1000000;
@@ -702,7 +710,7 @@ let inputUSDT = document.querySelector('#InputUSDT');
 inputUSDT.addEventListener('input', function() {
   const priceUSDThelp = document.getElementById("priceUSDTHelp");
   priceUSDThelp.innerHTML = `Receive ${(this.value / 0.33).toFixed(4)} ZEEX! : )`;
-  if (this.value < 30) {
+  if (this.value < 1) {
     priceUSDThelp.innerHTML = "1 ZEEX = 0.33 USDT | 1 USDT = 3.0303 ZEEX."
   } 
 });
